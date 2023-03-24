@@ -1,0 +1,189 @@
+/* more visible current day in sidebar calendar widget */
+.logseq-block-calendar .calendar-day-today {
+	border: 1px solid red;
+}
+
+.logseq-block-calendar {
+    max-width: 400px;
+    min-width: 315px;
+}
+
+div[data-refs-self*="-fit"]>.block-children-container.flex>.block-children.w-full>div.ls-block, div[data-refs-self*="-fit"]>.block-children-container.flex>.block-children.w-full>div.ls-block img {
+    min-width: 200px !important;
+    width: max-content !important;
+    object-fit: contain;
+}
+
+div[data-refs-self*="gallery"]>.block-children-container.flex>.block-children.w-full>div.ls-block {
+  overflow: visible !important;
+}
+
+/* remove transparent background for images in kanban gallery */
+.pswp__img {
+  background: white;
+}
+
+/* increase main font-size */
+.main-content-container {
+    font-size: 1.2em;
+}
+
+/* Mark Highlights */
+mark {
+  color: #000;
+  padding: 2px 4px !important;
+  margin: 0 2px !important;
+  border-radius: 3px !important;
+  font-weight: 600 !important;
+  background-color: #F6E05E !important;
+}
+
+mark.blue {
+  background-color: #63B3ED !important;
+}
+
+/* Progress bar */
+progress[value]::-webkit-progress-value {
+  background-image:
+          -webkit-linear-gradient(-45deg,
+          transparent 33%, rgba(0, 0, 0, .1) 33%,
+          rgba(0,0, 0, .1) 66%, transparent 66%),
+          -webkit-linear-gradient(top,
+          rgba(255, 255, 255, .25),
+          rgba(0, 0, 0, .25)),
+          -webkit-linear-gradient(left, #09c, #f44);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+/* more visible selected item in the search 
+194 210 196
+*/
+.cursor.menu-link.chosen {
+  background: rgba(194, 210, 196, 1) !important;
+}
+
+#search-in-page {
+  padding-top: 2.5em;
+}
+
+/* Fix the bug with invisible whiteboard name */
+.whiteboard-page-title-root {
+	top: 60px;
+}
+
+/* Correct the height of vscode plugin menu */
+.container-inner ._opener {
+  padding-top: 30px !important;
+}
+
+/* wide title for whiteboards */
+.whiteboard-page-title-root {
+  width: 400px;
+}
+
+/* Put nav buttons on one row, no text */
+.nav-header {
+    margin-left: 2px;
+}
+
+.nav-header .flex-1 {
+    display: none
+}
+
+.nav-header .item {
+    margin-left: 4px;
+    padding: 4px !important;
+}
+
+.nav-header .ui__icon {
+    margin-right: 0px !important;
+
+}
+
+.nav-header {
+    flex-direction: row;
+}
+
+.flashcards-nav .inline-block {
+    margin-left: 2px;
+    padding: 0px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+
+#left-sidebar .item>.ti {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.tie-whiteboard:before {
+    content: "\ea1d";
+    font-size: 20px;
+    color: #78C0A8;
+}
+
+#left-sidebar .ls-icon-infinity:before {
+    content: "\ea38";
+    color: #c8aa00;
+}
+
+#left-sidebar .ls-icon-hierarchy:before {
+    content: "\edff";
+    color: brown;
+}
+
+#awUI-calendar-menu .ls-icon-calendar-time:before {
+    content: "\ee21";
+    color: #db18ed;
+}
+/* Put nav buttons on one row, no text END */
+
+/* Fix issue with wide query on small width screens */
+.custom-query-title  {
+  gap: 96px;
+}
+
+* {
+ /* color: red;*/
+}
+
+a.tag { float: right; margin-left: 10px;}
+
+.dropdown-wrapper {
+  z-index: 1000 !important;
+  background-color: rebeccapurple;
+}
+
+
+/* Book status styling */
+a.page-ref[data-ref="📤 to read"] {
+    font-size: 1em;
+    background-color: #2d84d2;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: white;
+}
+
+a.page-ref[data-ref="✅ read"] {
+  font-size: 1em;
+  background-color: hsl(155,40%,31%);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+}
+
+a.page-ref[data-ref="📖 reading"] {
+  font-size: 1em;
+  background-color: hsl(155,40%,31%);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+}
