@@ -62,11 +62,9 @@ progress[value]::-webkit-progress-bar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
-/* more visible selected item in the search 
-194 210 196
-*/
+/* more visible selected item in the search */
 .cursor.menu-link.chosen {
-  background: rgba(194, 210, 196, 1) !important;
+  /* background: rgba(194, 210, 196, 1) !important; */
 }
 
 #search-in-page {
@@ -80,7 +78,7 @@ progress[value]::-webkit-progress-bar {
 
 /* Correct the height of vscode plugin menu */
 .container-inner ._opener {
-  padding-top: 30px !important;
+  /* padding-top: 30px !important; */
 }
 
 /* wide title for whiteboards */
@@ -151,10 +149,6 @@ progress[value]::-webkit-progress-bar {
   gap: 96px;
 }
 
-* {
- /* color: red;*/
-}
-
 a.tag { float: right; margin-left: 10px;}
 
 .dropdown-wrapper {
@@ -186,4 +180,155 @@ a.page-ref[data-ref="📖 reading"] {
   border-radius: 30px;
   padding: 5px 10px;
   color: white;
+}
+/* Book status styling /END */
+
+/* logseq table resizer v20220331 ======================= */
+/* add rules to custom.css =============================== */
+.table th {
+  position: relative;
+}
+.query-table-resizer {
+  position: relative;
+  top: -20px;
+  float: right;
+  margin-bottom: -18px;
+  cursor: col-resize;
+  user-select: none;
+  border-right: 1px solid var(--ls-border-color);
+  width: 10px; /* hitbox width */
+  height: 20px; 
+}
+
+.query-table-resizer:active,
+.query-table-resizing {
+  border-right: 2px solid rgb(255, 0, 0);
+}
+
+.custom-query table.table-auto {
+  width: -webkit-fill-available;
+  table-layout: fixed;
+}
+.custom-query .table-auto>thead>tr>th {
+  border-bottom: 1px solid var(--ls-border-color);
+}
+.custom-query .table-auto>thead>tr>th {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 3px 6px;
+}
+.custom-query .table-auto>tbody>tr>td.whitespace-nowrap {
+  overflow-wrap: break-word;
+  min-width: 20px;
+  white-space: normal;
+  font-weight: 300;
+  font-size: 13px;
+}
+.custom-query .table-auto>tbody>tr>.whitespace-nowrap img {
+  max-height: 120px;
+  margin: 0;
+}
+/* ==================================== end of table resizer */
+
+.cp__right-sidebar .sidebar-item {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px;
+
+}
+
+
+/* ==========  BETTER-SIDEBAR - right sidebarshrinking panes w/ horizontal scroll v20221217==================*/
+
+/* :root {
+  --sidebarItemMinWidth: 250px;
+  --sidebarItemMaxWidth: 650px;
+}
+
+.cp__right-sidebar-inner.flex.flex-col.h-full {
+  overflow: visible;
+}
+
+.sidebar-item-list {
+  width: fit-content;
+  height: 96vh !important;
+  overflow: unset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 0 6px 0 6px;
+  margin: 0 6px 0 6 px;
+}
+
+.cp__right-sidebar .sidebar-item {
+  display: inline-block;
+  align-self: flex-start;
+  overflow-y: auto;
+  min-height: 75px;
+  height: calc(100% - 10px) !important;
+  min-width: var(--sidebarItemMinWidth);
+  max-width: var(--sidebarItemMaxWidth);
+  width: 100%;
+  margin: 0px;
+  background-color: var(--ls-primary-background-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid black;
+  border-radius: 10px;
+  resize: both;
+  padding: 1.5rem 0.5rem;
+}
+
+.cp__right-sidebar-inner .resizer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  user-select: none;
+  cursor: col-resize !important;
+  z-index: 10;
+}
+
+.cp__right-sidebar .resizer:hover {
+  background-color: var(--ph-highlight-strong);
+}
+
+.cp__right-sidebar-scrollable {
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 100%;
+} */
+
+/* sliding panes */
+/* .sidebar-item.folded {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0px 0 !important;
+  padding: 5px;
+  resize: none;
+  width: 40px !important;
+  min-width: 40px;
+  writing-mode: vertical-LR;
+}
+
+.sidebar-item.folded .rotating-arrow.collapsed svg {
+  transform: rotate(180deg) translate(3px, -1.2rem);
+  transition: none;
+}
+
+.sidebar-item.folded .ml-1.font-medium {
+  margin-top: 2rem;
+  transition: none;
+}
+
+.cp__right-sidebar .sidebar-item.folded .close {
+  transform: scale(.8) translate(-8px);
+  transition: transform .1s;
+} */
+
+/* ======================================== end of BETTER-SIDEBAR ===== */
+
+/* ==== hide special props ==========================*/
+div[data-refs-self="bg-pic"] {
+  display: none !important;
 }
