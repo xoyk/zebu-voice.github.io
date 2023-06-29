@@ -149,7 +149,7 @@ progress[value]::-webkit-progress-bar {
   gap: 96px;
 }
 
-a.tag { float: right; margin-left: 10px;}
+/* a.tag { float: right; margin-left: 10px;} */
 
 .dropdown-wrapper {
   z-index: 1000 !important;
@@ -182,6 +182,7 @@ a.page-ref[data-ref="📖 reading"] {
   color: white;
 }
 /* Book status styling /END */
+
 
 /* logseq table resizer v20220331 ======================= */
 /* add rules to custom.css =============================== */
@@ -233,7 +234,6 @@ a.page-ref[data-ref="📖 reading"] {
   border: 1px solid black;
   border-radius: 10px;
   margin: 5px;
-
 }
 
 
@@ -331,4 +331,14 @@ a.page-ref[data-ref="📖 reading"] {
 /* ==== hide special props ==========================*/
 div[data-refs-self="bg-pic"] {
   display: none !important;
+}
+
+/* fix short width for default quiries blocks */
+#today-queries > .lazy-visibility {
+  width: 100% !important;
+}
+
+ul.settings-plugin-list {
+  list-style: none;
+  margin-left: 0;
 }
