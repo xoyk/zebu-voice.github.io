@@ -128,15 +128,15 @@ progress[value]::-webkit-progress-bar {
     color: #78C0A8;
 }
 
-#left-sidebar .ls-icon-infinity:before {
+/* #left-sidebar .ls-icon-infinity:before {
     content: "\ea38";
     color: #c8aa00;
-}
+} */
 
-#left-sidebar .ls-icon-hierarchy:before {
+/* #left-sidebar .ls-icon-hierarchy:before {
     content: "\edff";
     color: brown;
-}
+} */
 
 #awUI-calendar-menu .ls-icon-calendar-time:before {
     content: "\ee21";
